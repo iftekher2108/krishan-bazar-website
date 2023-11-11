@@ -2,6 +2,8 @@
     
 // Dropdown on mouse hover
 
+// const { css } = require("jquery")
+
     // $(document).ready(function () {
     //     function toggleNavbarMethod() {
     //         if ($(window).width() > 992) {
@@ -21,11 +23,23 @@
 
     $('.btn-cat-menu').click(function(){
         $('.cat-nav').slideToggle(400)
+        $(this).children('i').toggleClass('rotate')
     })
 
-    $('.dropdown').hover(function(){
-        $(this).children('.dropdown-menu').slideToggle(150)
-    })
+
+
+    $('.nav-item.dropdown').mouseenter(function(){
+        $(this).children('.dropdown-menu').slideDown(150)
+        $(this).children('a').children('i').css({"transform":"rotate(180deg)","transition":"all 0.15s ease-in-out"});
+
+    }) 
+    $('.nav-item.dropdown').mouseleave(function(){
+        $(this).children('.dropdown-menu').slideUp(150)
+        $(this).children('a').children('i').css({"transform":"rotate(0deg)","transition":"all 0.15s ease-in-out"});
+
+    })  
+
+  
 
 
 
