@@ -10503,8 +10503,23 @@ a.text-dark:focus {
 }
 
 .product {
-
+  border-radius: 10%;
   flex-basis: 240px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.product:hover {
+  box-shadow: 6px 8px 12px -8px rgba(0,0,0,0.64);
+  -webkit-box-shadow: 6px 8px 12px -8px rgba(0,0,0,0.64);
+  -moz-box-shadow: 6px 8px 12px -8px rgba(0,0,0,0.64);
 }
 
 
