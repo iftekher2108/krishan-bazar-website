@@ -66,9 +66,9 @@
         infinite: true,
         dots:true,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 4000,
 
-    });
+    }).slickAnimation();
 
 
 
