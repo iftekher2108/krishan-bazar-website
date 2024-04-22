@@ -15,31 +15,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+
+  <!-- bootstrap -->
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./icon/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/font-awesome/css/all.min.css">
 
     <!-- slick slide -->
     <link rel="stylesheet" href="./plugins/slick/slick.css">
     <link rel="stylesheet" href="./plugins/slick/slick-theme.css">
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-    <!-- slick animation libery -->
-    <link rel="stylesheet" href="./bower_components/animate.css/animate.min.css">
+    <!-- slick animation library -->
+    <link rel="stylesheet" href="./plugins/animate/animate.min.css">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
 
 <body>
 
 
-    <div class="main-menu top-0 position-sticky border-bottom mb-3">
+    <div class="main-menu sticky-top border-bottom mb-3">
 
-        <!-- Topbar Start -->
-        <div id="nav-menu" class="container-fluid bg-white  z-5 ">
+        <!-- Top bar Start -->
+        <div id="nav-menu" class="container-fluid bg-white w-100">
             <div class="row bg-primary text-white py-1 px-xl-5">
                 <div class="col-lg-6 d-none d-lg-block">
                     <div class="d-inline-flex align-items-center">
@@ -79,20 +80,18 @@
                         <h3 class="m-0 text-primary text-nowrap align-self-end font-weight-semi-bold">Krishan Bazar</h3>
                     </a>
                 </div>
-                <div class="col-lg-6 col-6 text-left">
+                <div class="col-lg-6 col-6 text-left d-lg-block d-none">
                     <form action="">
                         <div class="input-group gap-2">
-                            <input type="text" class="form-control rounded-2 display-4 pl-3 pr-5"
+                            <input type="text" class="form-control rounded-2 display-4 ps-3 pe-5"
                                 placeholder="Search for products">
-                            <div class="input-group-append">
-                                <span class="input-group-text bg-primary pr-5 pl-5 text-white">
+                                <span class="input-group-text bg-primary pe-5 ps-5 text-white">
                                     <i class="fa fa-search"></i>
                                 </span>
-                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-3 col-6 text-right">
+                <div class="col-lg-3 col-6 d-flex justify-content-end gap-2">
                     <a href="" class="btn border border-2 rounded-2">
                         <i class="fas fa-heart text-primary"></i>
                         <span>0</span>
@@ -108,20 +107,20 @@
 
 
         <!-- Navbar Start -->
-        <div class="container-fluid   bg-white">
+        <div class="container-fluid bg-white">
             <div class="row px-xl-5">
                 <div class="col-lg-3 position-relative  d-none d-lg-block">
-                    <a class="btn-cat-menu  shadow-none border border-2 mt-2 rounded-2 nav-link d-flex align-items-center justify-content-between text-primary w-100"
+                    <a class="btn-cat-menu shadow-none border border-2 my-2 p-2 rounded-2 nav-link d-flex align-items-center justify-content-between text-primary w-100"
                         data-toggle="collapse" href="javascript:void(0)" style="height: 45px;  ">
                         <h6 class="text-primary m-0">Categories</h6>
                         <i class="fa fa-angle-down cat-arrow-icon" style="transition: all 0.4s ease-in-out;"></i>
                     </a>
-                    <nav class="collapse hide position-absolute  w-100 rounded-2 bg-white cat-nav navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0"
+                    <nav class="collapse hide position-absolute w-100 rounded-2 bg-white cat-nav navbar navbar-vertical navbar-light"
                         id="navbar-vertical">
                         <div class="navbar-nav w-100" style="height:fit-content">
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown">Dresses <i
-                                        class="fa fa-angle-down float-right mt-1"></i></a>
+                                        class="fa fa-angle-down"></i></a>
                                 <div
                                     class="dropdown-menu  position-absolute bg-secondary  border-0 rounded-2 w-100 m-0">
                                     <a href="" class="dropdown-item">Men's Dresses</a>
@@ -130,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
-                                <a href="" class="nav-item nav-link dropdown">Shirts <i
+                                <a href="" class="nav-link dropdown">Shirts <i
                                         class="fa fa-angle-down float-right mt-1"></i></a>
                                 <div
                                     class="dropdown-menu  position-absolute bg-secondary  border-0 rounded-2 w-100 m-0">
@@ -144,7 +143,7 @@
                             <a href="" class="nav-item nav-link">Swimwear</a>
 
                             <div class="nav-item dropdown">
-                                <a href="" class="nav-item nav-link dropdown">Shirts <i
+                                <a href="" class="nav-link dropdown">Shirts <i
                                         class="fa fa-angle-down float-right mt-1"></i></a>
                                 <div
                                     class="dropdown-menu  position-absolute bg-secondary  border-0 rounded-2 w-100 m-0">
@@ -157,10 +156,10 @@
                             <a href="" class="nav-item nav-link">Sportswear</a>
                             <a href="" class="nav-item nav-link">Jumpsuits</a>
                             <div class="nav-item dropdown">
-                                <a href="" class="nav-item nav-link dropdown">Shirts <i
+                                <a href="" class="nav-link dropdown">Shirts <i
                                         class="fa fa-angle-down float-right mt-1"></i></a>
                                 <div
-                                    class="dropdown-menu  position-absolute bg-secondary  border-0 rounded-2 w-100 m-0">
+                                    class="dropdown-menu position-absolute bg-secondary  border-0 rounded-2 w-100 m-0">
                                     <a href="" class="dropdown-item">Men's Dresses</a>
                                     <a href="" class="dropdown-item">Women's Dresses</a>
                                     <a href="" class="dropdown-item">Baby's Dresses</a>
@@ -174,7 +173,7 @@
                 </div>
 
                 <div class="col-lg-9">
-                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <nav class="navbar navbar-expand-lg navbar-light py-3 justify-content-end py-lg-0 px-0">
                         <a href="" class="text-decoration-none d-flex align-items-end d-lg-none">
                             <img src="./img/KrishanLogo.png" class="img-fluid" height="70" width="80" alt="logo-img">
                             <h3 class="m-0 text-primary text-nowrap font-weight-semi-bold">Krishan Bazar</h3>
@@ -182,7 +181,7 @@
                                     class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1> -->
                         </a>
 
-                        <div class="log-in w-100 hide d-flex  justify-content-between">
+                        <div class="log-in hide d-flex justify-content-end">
 
                             <!-- <div class="navbar-nav mr-auto py-0">
                                 <a href="index.html" class="nav-item nav-link active">Home</a>
@@ -201,9 +200,9 @@
 
                             <div class="d-flex p-3 gap-3 ml-auto log-section align-self-end py-0">
                                 <a href=""
-                                    class=" text-primary py-1 border border-2 text-white px-4 rounded-2 nav-item nav-link">Login</a>
+                                    class="btn btn-primary  py-1 text-white px-4 rounded-2 ">Login</a>
                                 <a href=""
-                                    class=" text-primary border py-1 border-2 text-white px-4 rounded-2  nav-item nav-link">Register</a>
+                                    class="btn btn-primary  py-1 text-white px-4 rounded-2 ">Register</a>
                             </div>
                         </div>
                     </nav>
@@ -1181,11 +1180,11 @@
 
 
     <!-- bootstrap js cdn -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- iftekher mahmud -->
     <!-- jquery JavaScript Libraries -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
 
 
     <!-- slick slide -->
@@ -1193,11 +1192,11 @@
 
 
     <!-- slick animation libery -->
-    <script src="./bower_components/slick-animation/slick-animation.min.js"></script>
+    <script src="./plugins/slick-animation/slick-animation.min.js"></script>
 
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

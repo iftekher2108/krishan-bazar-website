@@ -80,8 +80,6 @@
 {
     display: none;
     float: left;
-
-    height: 60%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -91,7 +89,6 @@
 .slick-slide img
 {
     width: 100%;
-    object-fit: cover;
     display: block;
 }
 .slick-slide.slick-loading img
