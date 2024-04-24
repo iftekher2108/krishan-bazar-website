@@ -19,7 +19,6 @@ $primary: #02A050;
 }
 
 
-
 .section-title {
   position: relative;
   display: inline-block;
@@ -59,37 +58,37 @@ $primary: #02A050;
 }
 
 .product {
-  border-radius: 10%;
-  flex-basis: 240px;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
+  .card {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 
-  &:hover {
-    box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
-    -webkit-box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
+    &:hover {
+      box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
+      -webkit-box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 6px 8px 12px -8px rgba(0, 0, 0, 0.64);
+    }
   }
+
 }
 
-.product-item {
+.card.product-item {
   padding: 1px;
-
   .product-img {
     img {
       transform: scale(0.77);
-      transition: .5s;
+      transition:all 0.5s ease-in-out ;
       -webkit-transform: scale(0.77);
       -moz-transform: scale(0.77);
       -ms-transform: scale(0.77);
       -o-transform: scale(0.77);
-    }
+      -webkit-transition:all 0.5s ease-in-out ;
+      -moz-transition:all 0.5s ease-in-out ;
+      -ms-transition:all 0.5s ease-in-out ;
+      -o-transition:all 0.5s ease-in-out ;
+}
 
     &:hover {
       .product-img {
@@ -152,8 +151,7 @@ $primary: #02A050;
 }
 
 
-.btn-cat-menu,
-.log-section {
+.btn-cat-menu {
   a {
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -163,13 +161,11 @@ $primary: #02A050;
   }
 }
 
-.btn-cat-menu:hover,
-.log-section a:hover {
+.btn-cat-menu:hover {
   background: $primary;
 }
 
-.btn-cat-menu:hover :where(h6, i),
-.log-section a:hover {
+.btn-cat-menu:hover :where(h6, i) {
   color: white !important;
   border: 2px solid transparent !important;
 
