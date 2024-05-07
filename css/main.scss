@@ -1,6 +1,13 @@
 $primary: #02A050;
 
+*{
+  padding: 0;
+  margin: 0;
+}
 
+i {
+  line-height: inherit;
+}
 
 .nav-item {
   padding: 0.5rem;
@@ -76,19 +83,20 @@ $primary: #02A050;
 
 .card.product-item {
   padding: 1px;
+
   .product-img {
     img {
       transform: scale(0.77);
-      transition:all 0.5s ease-in-out ;
+      transition: all 0.5s ease-in-out;
       -webkit-transform: scale(0.77);
       -moz-transform: scale(0.77);
       -ms-transform: scale(0.77);
       -o-transform: scale(0.77);
-      -webkit-transition:all 0.5s ease-in-out ;
-      -moz-transition:all 0.5s ease-in-out ;
-      -ms-transition:all 0.5s ease-in-out ;
-      -o-transition:all 0.5s ease-in-out ;
-}
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+    }
 
     &:hover {
       .product-img {
@@ -204,17 +212,35 @@ $primary: #02A050;
 }
 
 
-.social-icon i {
-  margin: 0;
-  padding: .7rem;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
+.social-icon {
+  a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border: 1px solid white;
 
-.social-icon i:hover {
-  color: white !important;
-  background: $primary;
+    i {
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      
+    }
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+
 }
